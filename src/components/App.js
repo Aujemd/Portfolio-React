@@ -1,5 +1,8 @@
 import React from 'react'
-
+import {Home} from '../containers/Home'
+import '../sass/App.scss';
 export const App = () => {
-    return(<h1>Hola Mundo</h1>)
+    return <>
+    <Home />
+    </>
 }
