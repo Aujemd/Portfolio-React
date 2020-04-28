@@ -1,101 +1,145 @@
-.home-container{
-    height: 100vh;
-    @include display-grid;
-    @include grid-template-columns(1fr grid-repeat(3));
-    @include grid-template-rows(1fr grid-repeat(3));
-    grid-template-areas: "nav nav nav nav"
-                        "banner banner hero hero";                
-}
+.home{
+    &-container{
+        height: 100vh;
+        @include display-grid;
+        @include grid-template-columns(1fr grid-repeat(3));
+        @include grid-template-rows(1fr grid-repeat(3));
+        grid-template-areas: "nav nav nav nav"
+                            "banner banner hero hero"; 
+    }
 
-.home-navbar{
-    grid-area: nav;
-    // background: red;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-
-    ul{
-        width: 90%;
+    &-navbar{
+        grid-area: nav;
+        // background: red;
+        z-index: 100;
         display: flex;
-        height: 40%;
+        justify-content: center;
+    
+        ul{
+            width: 90%;
+            display: flex;
+            height: 40%;
+            align-items: center;
+            justify-content: flex-end;
+            list-style: none;
+            margin-top: 1%;
+    
+            li{
+                margin-right: 4%;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: $Fuente2;
+                }
+            }
+    
+            li:first-of-type{
+                margin-right: 40%;
+                a{
+                    color: $color-primario;
+                }
+            }
+    
+            li:last-of-type{
+                margin-right: 20%;
+            }
+        }
+    }
+
+    &-hero{
+        grid-area: hero;
+        // background: blue;
+        grid-row: 2 / 5;
+    }
+
+    &-skew{
+        position: absolute;
+        background: $color-primario;
+        top: 0;
+        right: 0;
+        left: 48%;
+        bottom: 0;
+        transform: skew(20deg, 0deg);
+        width: 200%;    
+    }
+
+    &-banner{
+        grid-area: banner;
+        grid-row: 2 / 5;
+        display: flex;
         align-items: center;
         justify-content: flex-end;
-        list-style: none;
-        margin-top: 1%;
-
-        li{
-            margin-right: 4%;
-            a{
-                text-decoration: none;
-                color: white;
-                font-family: $Fuente2;
-            }
-        }
-
-        li:first-of-type{
-            margin-right: 40%;
-            a{
-                color: $color-primario;
-            }
-        }
-
-        li:last-of-type{
-            margin-right: 20%;
-        }
-    }
-
     
+        &-content{
+            width: 70%;
+            margin-bottom: 10%;
+        }
+    
+        &-salute{
+            color: $color-primario;
+            font-size: 2em;
+            font-family: $Fuente1;
+        }
+    
+        &-name{
+            font-size: 4em;
+            font-family: $Fuente1;
+        }
+    
+        &-title{
+            font-size: 1.2em;
+            font-family: $Fuente2;
+        }
+    
+        &-text{
+            font-family: $Fuente2;
+            color: gray;
+            margin-bottom: 10%;
+        }
 
+        &-button{
+            font-family: $Fuente2;
+            background: $color-primario;
+            color: white;
+            padding: 4%;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    }
+
+    &-social{
+
+        margin-right: 12%;
+        padding: 2%;
+        margin-bottom: 24%;
+        border: .5px solid $color-primario;
+        border-radius: 40px;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                margin-bottom: 200%;
+                a{
+                    font-size: 1.3em;
+                    color: gray;
+                }
+
+                a:hover{
+                    color: $color-primario;
+                }
+            }
+
+            li:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
-.home-hero{
-    grid-area: hero;
-    // background: blue;
-    grid-row: 2 / 5;
-}
-
-.home-skew{
-    position: absolute;
-    background: $color-primario;
-    top: 0;
-    right: 0;
-    left: 48%;
-    bottom: 0;
-    transform: skew(20deg, 0deg);
-    width: 200%;
-}
-
-.home-banner{
-    grid-area: banner;
-    // background: pink;
-    grid-row: 2 / 5;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    &-content{
-        width: 70%;
-    }
-
-    &-salute{
-        color: $color-primario;
-        font-size: 2em;
-        font-family: $Fuente1;
-    }
-
-    &-name{
-        font-size: 4em;
-        font-family: $Fuente1;
-    }
-
-    &-title{
-        font-size: 1.2em;
-        font-family: $Fuente2;
-        color: $color-primario;
-    }
-
-    &-text{
-        font-family: $Fuente2;
-    }
-}
 

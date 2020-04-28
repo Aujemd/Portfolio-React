@@ -8,6 +8,5 @@ export const Home = () => {
         <div className="home-hero"/>
         <div className="home-skew"/>
         <Banner/>
-        <div className="home-social"/>
     </div>
 }
