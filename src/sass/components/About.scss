@@ -1,0 +1,53 @@
+.about{
+    &-container{
+        height: 100vh;
+        @include display-grid;
+        @include grid-template-columns(1fr grid-repeat(1));
+        @include grid-template-rows(1fr grid-repeat(1));
+        grid-template-areas: "hero content"
+                            "hero stats";
+    }
+
+    &-hero{
+        grid-area: hero;
+    }
+
+    &-content{
+        grid-area: content;
+        width: 70%;
+        margin-top: 30%;
+        &-subtitle{
+            color: $color-primario;
+            font-family: $Fuente1;
+        }
+
+        &-title{
+            font-family: $Fuente1;
+            font-size: 2.5em;
+        }
+
+        &-text{
+            font-family: $Fuente2;
+            color: gray;
+        }
+    }
+
+    &-stats{
+        grid-area: stats;
+        width: 70%;
+
+        &-skills-title{
+            margin: 0;
+            font-size: .9em;
+            margin-top: 2%;
+        }
+
+        &-percentage{
+            margin: 0;
+            margin-left: 94%;
+            margin-top: -2%;
+            font-size: .8em;
+            color: gray;
+        }
+    }
+}

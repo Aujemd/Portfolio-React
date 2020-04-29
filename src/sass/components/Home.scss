@@ -105,6 +105,11 @@
             text-decoration: none;
             border-radius: 5px;
         }
+
+        &-button:hover{
+            color: white;
+            text-decoration: none;
+        }
     }
 
     &-social{
@@ -112,9 +117,7 @@
         margin-right: 12%;
         padding: 2%;
         margin-bottom: 24%;
-        border: .5px solid $color-primario;
-        border-radius: 40px;
-
+  
         ul{
             display: flex;
             flex-direction: column;
