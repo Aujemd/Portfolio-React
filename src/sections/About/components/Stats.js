@@ -1,7 +1,7 @@
 import React from 'react'
 import { Progress } from 'reactstrap'
 
-export const AboutStats = () => {
+export const Stats = () => {
     return <div className="about-stats">
     <p className="about-stats-skills-title">HTML/CSS</p> 
     <p className="about-stats-percentage">90%</p> 

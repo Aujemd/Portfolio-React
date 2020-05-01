@@ -1,11 +1,11 @@
 import React from 'react'
-import {AboutContent} from '../components/AboutContent'
-import {AboutStats} from '../components/AboutStats'
+import {Content} from '../components/Content'
+import {Stats} from '../components/Stats'
 
 export const About = () =>{
     return<div className="about-container">
         <div className="about-hero"></div>
-        <AboutContent/>
-        <AboutStats/>
+        <Content/>
+        <Stats/>
     </div>
 }

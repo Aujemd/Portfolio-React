@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const AboutContent = () => {
+export const Content = () => {
     return <div className="about-content">
     <h2 className="about-content-subtitle">About</h2>
     <h1 className="about-content-title">Why You Hire Me?</h1>

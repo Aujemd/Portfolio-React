@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {App} from './components/App'
-import 'bootstrap/dist/css/bootstrap.css';
+import {App} from './App'
+import 'bootstrap/dist/css/bootstrap.css'
 
 const container = document.getElementById('app')
 
@@ -12,7 +12,7 @@ function render (){
 render()
 
 if(module.hot){
-    module.hot.accept('./components/App', () => {
+    module.hot.accept('./App', () => {
         render()
     })
 }
