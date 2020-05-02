@@ -14,24 +14,24 @@ export const Services = () => {
           />
           <Card title={'Web Design'}
           text={'Creation, layout and implementation of your website.'}
-          icon = {<i class="far fa-object-group"></i>}
+          icon = {<i className="far fa-object-group"></i>}
           />
           <Card title={'UI/UX'}
           text = {'Design and features to get the best performance and interactivity of your applications.'}
-          icon = {<i class="far fa-star"></i>}
+          icon = {<i className="far fa-star"></i>}
           />
           <Card title={'Backend Development'}
           text={'Complete development of backend of your applications.'}
-          icon = {<i class="fas fa-project-diagram"></i>}
+          icon = {<i className="fas fa-project-diagram"></i>}
 
           />
           <Card title={'Secure applications'}
           text={'Implemented of modern protocols to make your applications more secure.'}
-          icon = {<i class="fas fa-unlock-alt"></i>}
+          icon = {<i className="fas fa-unlock-alt"></i>}
           />
           <Card title={'Mobile Applications'}
           text={'Design and creations of your web applications in React Native for mobile.'}
-          icon = {<i class="fas fa-mobile-alt"></i>}
+          icon = {<i className="fas fa-mobile-alt"></i>}
           />
       </div>
     </div>
