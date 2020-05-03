@@ -7,6 +7,7 @@
     &-titles{
         margin-top: 15%;
         margin-left: 7%;
+        margin-bottom: 5%;
     }
 
     &-title{
@@ -20,15 +21,18 @@
     }
 
     &-carousel{
-        display: flex;
-        width: 600%;
-        height: 70%;
+        width: 88%;
+        margin: 0 auto;
+
+   
+        
         &-item{
             flex-direction: column;
-            width: 100vw * 0.27;
+            width: 27vw;
             justify-content: center;
             align-items: center;
-            margin: 100vw * 0.01;
+            height: 27em;
+         
 
             &-image{
                 width: 100%;
@@ -56,14 +60,6 @@
                 color: gray;
                 margin: 0 0 0 6%;
             }
-        }
-
-        &-item:first-of-type{
-            margin-left: 100vw * 0.07;
-        }
-
-        &-item:nth-of-type(4){
-            visibility: hidden;
         }
     }
 
