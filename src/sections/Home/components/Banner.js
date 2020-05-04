@@ -9,7 +9,6 @@ export const Banner = () => {
             <h1 className="home-banner-name">Johan Mora</h1>
             <p className="home-banner-title">Web Developer</p>
             <p className="home-banner-text">Frontend and Backend for all types of projects and applications.</p>
-            <a href='#' className="home-banner-button rounded">Contact Me</a>
         </div>
     </div>
 }

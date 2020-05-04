@@ -3,7 +3,7 @@ import Logo from '../../Home/components/SvgComponent'
 
 export const Footer = () => {
     return <div className="footer-container">
-        <Logo/>
+        <a href="#"><Logo/></a>
         <ul className="footer-social">
             <li><a href="https://www.facebook.com/jemd1999"className="footer-social-item"><i className="fab fa-facebook-f"></i></a></li>
             <li><a href="https://twitter.com/johanEmd"className="footer-social-item"><i className="fab fa-twitter"></i></a></li>
