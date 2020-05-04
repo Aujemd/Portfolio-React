@@ -1,8 +1,9 @@
 import React from 'react'
+import Logo from '../../Home/components/SvgComponent'
 
 export const Footer = () => {
     return <div className="footer-container">
-        <p className="footer-name">JEMD</p>
+        <Logo/>
         <ul className="footer-social">
             <li><a href="https://www.facebook.com/jemd1999"className="footer-social-item"><i className="fab fa-facebook-f"></i></a></li>
             <li><a href="https://twitter.com/johanEmd"className="footer-social-item"><i className="fab fa-twitter"></i></a></li>

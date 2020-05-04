@@ -16,7 +16,8 @@
         list-style: none;
         width: 20%;
         margin: 0 auto;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding: 0;
 
         &-item{
             font-size: 1.6em;
@@ -38,6 +39,8 @@
         &-item{
             font-size: 1.2em;
             color: black;
+            font-family: $Fuente2;
+
         }
 
         &-item:hover{
@@ -48,5 +51,7 @@
 
     &-firm{
         color: grey;
+        font-family: $Fuente2;
+
     }
 }
