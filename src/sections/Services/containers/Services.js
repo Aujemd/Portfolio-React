@@ -9,7 +9,7 @@ export const Services = () => {
       </div>
       <div className="services-cards">
           <Card title={'Frotend Development'}
-          text = {'Complete development of your page or app on modern technologies for can see it in the web.'}
+          text = {'Complete development of you web page with modern technologies.'}
           icon = {<i className="fas fa-code"></i>}
           />
           <Card title={'Web Design'}
@@ -21,7 +21,7 @@ export const Services = () => {
           icon = {<i className="far fa-star"></i>}
           />
           <Card title={'Backend Development'}
-          text={'Complete development of backend of your applications.'}
+          text={'Complete development of the backend in your app.'}
           icon = {<i className="fas fa-project-diagram"></i>}
 
           />
@@ -30,7 +30,7 @@ export const Services = () => {
           icon = {<i className="fas fa-unlock-alt"></i>}
           />
           <Card title={'Mobile Applications'}
-          text={'Design and creations of your web applications in React Native for mobile.'}
+          text={'Design and creations of your web applications in React Native.'}
           icon = {<i className="fas fa-mobile-alt"></i>}
           />
       </div>

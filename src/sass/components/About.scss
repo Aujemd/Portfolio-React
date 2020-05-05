@@ -34,22 +34,19 @@
         }
     }
 
-    &-stats{
+    &-list{
         grid-area: stats;
         width: 70%;
 
-        &-skills-title{
-            margin: 0;
-            font-size: .9em;
-            margin-top: 2%;
+  
+
+        &-item{
+            font-family: $Fuente2;
+            color: black;
         }
 
-        &-percentage{
-            margin: 0;
-            margin-left: 94%;
-            margin-top: -2%;
-            font-size: .8em;
-            color: gray;
+        &-icon{
+            color: $color-primario;
         }
 
     }

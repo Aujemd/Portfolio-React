@@ -44,7 +44,7 @@ export const Portfolio = () => {
     return <div className="portfolio-container" id="portfolio">
         <div className="portfolio-titles">
             <h2 className="portfolio-subtitle text-orange">Portfolio</h2>
-            <h1 className="portfolio-title">Lastest Projects</h1>
+            <h1 className="portfolio-title">Latest Projects</h1>
         </div>
         <div className="portfolio-carousel">
             <Slider {...settings} className="portfolio-carousel-slider">
