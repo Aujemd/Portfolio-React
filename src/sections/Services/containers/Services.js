@@ -2,7 +2,7 @@ import React from 'react'
 import {Card} from '../components/Card'
 
 export const Services = () => {
-    return <div className="services-container">
+    return <div className="services-container" id="services">
       <div className="services-titles">
         <h2 className="services-subtitle">Services</h2>
         <h1 className="services-title">Services I Provide</h1>

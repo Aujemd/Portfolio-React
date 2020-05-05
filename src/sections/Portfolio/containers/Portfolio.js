@@ -41,7 +41,7 @@ const settings = {
   };
 
 export const Portfolio = () => {
-    return <div className="portfolio-container">
+    return <div className="portfolio-container" id="portfolio">
         <div className="portfolio-titles">
             <h2 className="portfolio-subtitle text-orange">Portfolio</h2>
             <h1 className="portfolio-title">Lastest Projects</h1>

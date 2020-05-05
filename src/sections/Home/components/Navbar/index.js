@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Logo from '../SvgComponent'
 import {NavContainer, NavUl, NavLi, NavA} from './styles'
+import {Link} from 'react-scroll'
 
 
 export const Navbar = () => {
@@ -22,11 +23,11 @@ export const Navbar = () => {
     const renderNav = (fixed) => (
     <NavContainer fixed={fixed}>
         <NavUl>
-        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}><Logo/></NavA></NavLi>
-        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}>Home</NavA></NavLi>
-        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}>About</NavA></NavLi>
-        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}>Services</NavA></NavLi>
-        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}>Portfolio</NavA></NavLi>
+        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}><Link smooth={true} duration={3000} to="home"><Logo/></Link></NavA></NavLi>
+        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}><Link smooth={true} duration={3000} to="home">Home</Link></NavA></NavLi>
+        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}><Link smooth={true} duration={3000} to="about">About</Link></NavA></NavLi>
+        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}><Link smooth={true} duration={3000} to="services">Services</Link></NavA></NavLi>
+        <NavLi><NavA href="#" className="home-navbar-link" fixed={fixed}><Link smooth={true} duration={3000} to="portfolio">Portfolio</Link></NavA></NavLi>
     </NavUl>
     </NavContainer>
     )

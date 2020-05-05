@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../Home/components/SvgComponent'
+import {Link} from 'react-scroll'
 
 export const Footer = () => {
     return <div className="footer-container">
@@ -12,10 +13,10 @@ export const Footer = () => {
         </ul>
         <h1 className="footer-email">joenmodu99@gmail.com</h1>
         <ul className="footer-nav">
-        <li><a href="#" className="footer-nav-item">Home</a></li>
-        <li><a href="#" className="footer-nav-item">About</a></li>
-        <li><a href="#" className="footer-nav-item">Services</a></li>
-        <li><a href="#" className="footer-nav-item">Portfolio</a></li>
+        <li><a href='#' className="footer-nav-item"><Link smooth={true} duration={3000} to="home">Home</Link></a></li>
+        <li><a href='#' className="footer-nav-item"><Link smooth={true} duration={3000} to="about">About</Link></a></li>
+        <li><a href='#' className="footer-nav-item"><Link smooth={true} duration={3000} to="services">Services</Link></a></li>
+        <li><a href='#' className="footer-nav-item"><Link smooth={true} duration={3000} to="portfolio">Portfolio</Link></a></li>
         </ul>
     <p className="footer-firm">Developed by <a href='https://github.com/Aujemd'>@Aujemd</a></p>
     </div>
