@@ -14,8 +14,9 @@
 
     &-hero{
         grid-area: hero;
-        // background: blue;
         grid-row: 2 / 5;
+        z-index: 1000000;
+        width: 100%;
     }
 
     &-skew{
