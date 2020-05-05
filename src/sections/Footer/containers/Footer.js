@@ -11,7 +11,7 @@ export const Footer = () => {
             <li><a href="https://www.instagram.com/jemdu99/"className="footer-social-item"><i className="fab fa-instagram"></i></a></li>
             <li><a href="https://www.linkedin.com/in/johan-mora-925421197/"className="footer-social-item"><i className="fab fa-linkedin-in"></i></a></li>
         </ul>
-        <h1 className="footer-email">joenmodu99@gmail.com</h1>
+        <h1><a href="mailto:joenmodu99@gmail.com?Subject=Contacto%20desde%20el%20portafolio" className="footer-email">Contact me</a></h1>
         <ul className="footer-nav">
         <li><a href='#' className="footer-nav-item"><Link smooth={true} duration={3000} to="home">Home</Link></a></li>
         <li><a href='#' className="footer-nav-item"><Link smooth={true} duration={3000} to="about">About</Link></a></li>

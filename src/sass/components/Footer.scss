@@ -5,10 +5,17 @@
         line-height: 4em;
     }
 
-    &-name{
+    &-email{
         font-family: $Fuente1;
         color: $color-primario;
     }
+
+    &-email:hover{
+        text-decoration: none;
+        color: $color-primario;
+    }
+
+
 
     &-social{
         display: flex;
