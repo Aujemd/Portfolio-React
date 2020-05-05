@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Progress } from 'reactstrap'
+import Aos from "aos"
+import 'aos/dist/aos.css'
 
 export const Stats = () => {
-    return <div className="about-stats">
+    useEffect(() => {
+        Aos.init({duration: 2000})
+    }, [])
+    return <div className="about-stats" data-aos="fade-left">
     <p className="about-stats-skills-title">HTML/CSS</p> 
     <p className="about-stats-percentage">90%</p> 
     <Progress value='90'color="orange"/>
