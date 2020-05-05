@@ -1,7 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from "aos"
+import 'aos/dist/aos.css'
 
 export const Social = () => {
-    return <div className="home-social">
+
+    useEffect(() => {
+        Aos.init({duration: 3000})
+    }, [])
+
+    return <div className="home-social" data-aos="fade-up">
         <ul>
             <li><a href="https://www.facebook.com/jemd1999"><i className="fab fa-facebook-f"></i></a></li>
             <li><a href="https://twitter.com/johanEmd"><i className="fab fa-twitter"></i></a></li>
