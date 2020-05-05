@@ -19,7 +19,7 @@ export const NavContainer = styled.div`
             -moz-box-shadow: -1px 10px 13px -7px rgba(0,0,0,0.24);
             box-shadow: -1px 10px 13px -7px rgba(0,0,0,0.24);
 
-            animation: spawn .4s;
+            animation: spawn .3s;
 
             animation-timing-function: ease-in-out;
 

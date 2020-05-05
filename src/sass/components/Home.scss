@@ -45,22 +45,30 @@
             color: $color-primario;
             font-size: 2em;
             font-family: $Fuente1;
+            animation: animationIn 1s;
+            animation-timing-function: ease-out;
         }
     
         &-name{
             font-size: 4em;
             font-family: $Fuente1;
+            animation: animationIn 1s;
+            animation-timing-function: ease-out;
         }
     
         &-title{
             font-size: 1.2em;
             font-family: $Fuente2;
+            animation: animationIn 1.5s;
+            animation-timing-function: ease-out;
         }
     
         &-text{
             font-family: $Fuente2;
             color: gray;
             margin-bottom: 10%;
+            animation: animationIn 1.3s;
+            animation-timing-function: ease-out;
         }
 
     }
