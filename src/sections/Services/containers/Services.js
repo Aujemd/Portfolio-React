@@ -5,7 +5,7 @@ export const Services = () => {
     return <div className="services-container" id="services">
       <div className="services-titles">
         <h2 className="services-subtitle">Services</h2>
-        <h1 className="services-title">Services I Provide</h1>
+        <h1 className="services-title">What can I do</h1>
       </div>
       <div className="services-cards">
           <Card title={'Frotend Development'}
@@ -30,7 +30,7 @@ export const Services = () => {
           icon = {<i className="fas fa-unlock-alt"></i>}
           />
           <Card title={'Mobile Applications'}
-          text={'Design and creations of your web applications in React Native.'}
+          text={'Turn your web app into a mobile app with React Native.'}
           icon = {<i className="fas fa-mobile-alt"></i>}
           />
       </div>
