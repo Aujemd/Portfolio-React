@@ -1,31 +1,27 @@
 .services{
     &-container{
-        @include display-grid;
-        @include grid-template-columns(1fr grid-repeat(2));
-        @include grid-template-rows(1fr grid-repeat(2));
-        grid-template-areas: "titles titles titles"
-                             "cards cards cards"
-                             "cards cards cards";
+ 
     }
 
     &-titles{
         margin-top: 15%;
         grid-area: titles;
         text-align: center;
+        margin: 0 auto;
     }
 
     &-subtitle{
         color: $color-primario;
         font-family: $Fuente1; 
+        font-size: 1.5em;
     }
 
     &-title{
         font-family: $Fuente1;
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     &-cards{
-        grid-area: cards;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -33,9 +29,9 @@
     &-card{
         display: flex;
         flex-direction: column;
-        width: 27%;
-        margin: 1%;
-        padding: 3%;
+        width: 90%;
+        margin: 5%;
+        padding: 5%;
         
             i{
                 background-color: $color-primario;
@@ -50,13 +46,14 @@
             &-title{
                 margin-top: 8%;
                 font-family: $Fuente2;
-                font-size: 1.6em;
+                font-size: 1.5em;
                 font-weight: bold;
             }
 
             &-text{
                 font-family: $Fuente2;
                 color: gray;
+                font-size: .9em;
             }
         
     }

@@ -32,7 +32,7 @@ function SampleNextArrow(props) {
 
 const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     speed: 700,
     cssEase: "ease-out",

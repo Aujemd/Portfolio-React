@@ -1,7 +1,6 @@
 .portfolio{
     &-container{
         margin: 0 auto;
-        height: 100vh;
     }
 
     &-titles{
@@ -12,24 +11,25 @@
 
     &-title{
         font-family: $Fuente1;
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     &-subtitle{
         color: $color-primario;
         font-family: $Fuente1; 
+        font-size: 1.5em;
     }
 
     &-carousel{
-        width: 88%;
+        width: 70%;
         margin: 0 auto;
    
         &-item{
             flex-direction: column;
-            width: 27vw;
+            width: 100%;
             justify-content: center;
             align-items: center;
-            height: 27em;
+            height: 50%;
          
 
             &-image{
@@ -41,7 +41,7 @@
 
             &-title{
                 font-family: $Fuente2;
-                font-size: 1.4em;
+                font-size: 1.5em;
                 font-weight: bold;
                 margin: 5%;
                 color: black;
@@ -57,6 +57,7 @@
                 font-family: $Fuente2;
                 color: gray;
                 margin: 0 0 0 6%;
+                font-size: .9em;
             }
         }
     }

@@ -1,22 +1,30 @@
 .home{
     &-container{
-        height: 100vh;
-        @include display-grid;
-        @include grid-template-columns(1fr grid-repeat(3));
-        @include grid-template-rows(1fr grid-repeat(3));
-        grid-template-areas: "banner banner hero hero"
-                            "banner banner hero hero"; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
-    &-navbar-link{
-        font-family: $Fuente2;
+    &-navbar{
+        &-link{
+            font-family: $Fuente2;
+        }
+
+        &-button{
+            color: $color-primario;
+            margin-left: 2em;
+        }
+
+        &-brand{
+            margin-left: 3em;
+        }
     }
 
     &-hero{
-        grid-area: hero;
-        grid-row: 2 / 5;
         z-index: 1000000;
-        width: 100%;
+        width: 70%;
+        margin: -20% 0 20% 0;
     }
 
     &-skew{
@@ -27,59 +35,59 @@
         left: 48%;
         bottom: 0;
         transform: skew(20deg, 0deg);
-        width: 200%;    
+        width: 200%;
+        display: none;
     }
 
     &-banner{
-        grid-area: banner;
-        grid-row: 2 / 5;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-    
+
         &-content{
             width: 70%;
-            margin-bottom: 10%;
+            margin: 20% 0 0 0;
         }
-    
+
         &-salute{
             color: $color-primario;
-            font-size: 2em;
+            font-size: 1.5em;
             font-family: $Fuente1;
             animation: animationIn 1s;
             animation-timing-function: ease-out;
+            margin: 0;
         }
-    
+
         &-name{
-            font-size: 4em;
+            font-size: 2.2em;
             font-family: $Fuente1;
             animation: animationIn 1s;
             animation-timing-function: ease-out;
+            margin: 0;
         }
-    
+
         &-title{
-            font-size: 1.2em;
             font-family: $Fuente2;
             animation: animationIn 1.5s;
             animation-timing-function: ease-out;
+            margin: 0;
         }
-    
+
         &-text{
             font-family: $Fuente2;
             color: gray;
             margin-bottom: 10%;
             animation: animationIn 1.3s;
             animation-timing-function: ease-out;
+            font-size: .9em;
         }
 
     }
 
     &-social{
-
-        margin-right: 12%;
+        margin: 40% 12% 24% 0;
         padding: 2%;
-        margin-bottom: 24%;
-  
+
         ul{
             display: flex;
             flex-direction: column;
@@ -89,7 +97,7 @@
             padding: 0;
             margin: 0;
             li{
-                margin-bottom: 200%;
+                margin-bottom: 20%;
                 a{
                     font-size: 1.3em;
                     color: gray;

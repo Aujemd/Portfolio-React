@@ -11,8 +11,8 @@ export const Home = () => {
     }, [])
 
     return<div className="home-container" id="home">
-        <img src={img} className="home-hero" data-aos="fade-up"/>
         <div className="home-skew"/>
         <Banner/>
+        <img src={img} className="home-hero" data-aos="fade-up"/>
     </div>
 }

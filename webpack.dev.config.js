@@ -9,7 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].js',
-        publicPath: 'https://portfolio-react-vert.now.sh/',
+        publicPath: 'http://localhost:9000/',
         chunkFilename: 'js/[id].[chunkhash].js'
     },
     devServer:{
