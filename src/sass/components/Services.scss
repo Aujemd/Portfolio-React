@@ -1,10 +1,5 @@
 .services{
-    &-container{
- 
-    }
-
     &-titles{
-        margin-top: 15%;
         grid-area: titles;
         text-align: center;
         margin: 0 auto;
@@ -12,8 +7,9 @@
 
     &-subtitle{
         color: $color-primario;
-        font-family: $Fuente1; 
+        font-family: $Fuente1;
         font-size: 1.5em;
+        margin-top: 15%;
     }
 
     &-title{
@@ -32,7 +28,6 @@
         width: 90%;
         margin: 5%;
         padding: 5%;
-        
             i{
                 background-color: $color-primario;
                 text-align: center;
@@ -42,7 +37,7 @@
                 font-size: 2em;
                 color: white;
             }
-        
+
             &-title{
                 margin-top: 8%;
                 font-family: $Fuente2;
@@ -55,7 +50,11 @@
                 color: gray;
                 font-size: .9em;
             }
-        
+        @include media("tablet"){
+            width: 40%;
+            margin: 1%;
+            padding: 2%;
+        }
     }
 
     &-card:hover{

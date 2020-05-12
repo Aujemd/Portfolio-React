@@ -23,6 +23,10 @@
     &-carousel{
         width: 70%;
         margin: 0 auto;
+
+        @include media("tablet"){
+            width: 90%;
+        }
    
         &-item{
             flex-direction: column;
@@ -30,7 +34,10 @@
             justify-content: center;
             align-items: center;
             height: 50%;
-         
+            
+            @include media("tablet"){
+                width: 90%;
+            }
 
             &-image{
                 width: 100%;

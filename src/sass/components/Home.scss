@@ -4,6 +4,14 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+
+        @include media("tablet"){
+            @include display-grid;
+            @include grid-template-columns(1fr grid-repeat(1));
+            @include grid-template-rows(1fr grid-repeat(1));
+            grid-template-areas: "banner hero"
+                                "banner hero"; 
+        }
     }
 
     &-navbar{
@@ -13,11 +21,21 @@
 
         &-button{
             color: $color-primario;
-            margin-left: 2em;
+            margin-left: 10%;
         }
 
         &-brand{
-            margin-left: 3em;
+            margin-left: 15%;
+        }
+
+        @include media("tablet"){
+            &-button{
+                font-size: 2em;
+            }
+
+            &-brand{
+                margin-left: 27%;
+            }
         }
     }
 
@@ -25,6 +43,12 @@
         z-index: 1000000;
         width: 70%;
         margin: -20% 0 20% 0;
+
+        @include media("tablet"){
+            grid-area: hero;
+            width: 90%;
+            margin: 0;
+        }
     }
 
     &-skew{
@@ -42,10 +66,9 @@
     &-banner{
         display: flex;
         align-items: center;
-        justify-content: flex-end;
 
         &-content{
-            width: 70%;
+            width: 60%;
             margin: 20% 0 0 0;
         }
 
@@ -82,10 +105,16 @@
             font-size: .9em;
         }
 
+        @include media("tablet"){
+            grid-area: banner;
+            width: 100%;
+            margin: 0;
+        }
+
     }
 
     &-social{
-        margin: 40% 12% 24% 0;
+        margin: 40% 12% 24% 10%;
         padding: 2%;
 
         ul{

@@ -5,6 +5,11 @@
         @include grid-template-rows(1fr grid-repeat(1));
         grid-template-areas: "content content"
                             "stats stats";
+
+        @include media("tablet"){
+            grid-template-areas: "content stats"
+                                "content stats";
+        }
         }
 
     &-hero{
@@ -17,7 +22,7 @@
 
     &-content{
         grid-area: content;
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         &-subtitle{
             color: $color-primario;

@@ -7,6 +7,7 @@ import smartphones from '../../../assets/Smartphones.png'
 import product from '../../../assets/Product.png'
 import restaurant from '../../../assets/restaurant.png' 
 import petgram from '../../../assets/petgram.png'
+import useWindowDimensions from "../../../hooks/useWindowDImensions"
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -18,7 +19,7 @@ function SampleNextArrow(props) {
       />
     );
   }
-  
+
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -30,9 +31,16 @@ function SampleNextArrow(props) {
     );
   }
 
-const settings = {
+
+
+export const Portfolio = () => {
+
+  const { height, width } = useWindowDimensions();
+
+
+  let settings = {
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow:width > 900 ? 3 : width > 768 ? 2 : 1,
     slidesToScroll: 1,
     speed: 700,
     cssEase: "ease-out",
@@ -40,7 +48,6 @@ const settings = {
     prevArrow: <SamplePrevArrow/>
   };
 
-export const Portfolio = () => {
     return <div className="portfolio-container" id="portfolio">
         <div className="portfolio-titles">
             <h2 className="portfolio-subtitle text-orange">Portfolio</h2>

@@ -3,6 +3,10 @@
         margin-bottom: 8%;
         text-align: center;
         line-height: 4em;
+
+        @include media("tablet"){
+            margin-top: 10%;
+        }
     }
 
     &-email{
