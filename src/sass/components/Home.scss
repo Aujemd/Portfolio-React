@@ -30,6 +30,10 @@
         &-button{
             color: $color-primario;
             margin-left: 10%;
+            margin-right: 2%;
+            @include media("desktop-s"){
+                display: none;
+            }
         }
 
         &-brand{
@@ -43,6 +47,12 @@
 
             &-brand{
                 margin-left: 27%;
+            }
+        }
+
+        @include media("desktop-s"){
+            &-brand{
+                margin-left: 5%;
             }
         }
     }
