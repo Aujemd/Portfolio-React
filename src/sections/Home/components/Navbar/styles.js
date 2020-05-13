@@ -14,9 +14,7 @@ export const NavContainer = styled.div`
         -moz-box-shadow: -1px 10px 13px -7px rgba(0,0,0,0.24);
         box-shadow: -1px 10px 13px -7px rgba(0,0,0,0.24);
 
-        @media only screen and (min-width: 768px) {
-            display: flex;
-        }
+
 `
 export const NavUl = styled.ul`
 

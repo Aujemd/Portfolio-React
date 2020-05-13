@@ -10,20 +10,36 @@
             grid-template-areas: "content stats"
                                 "content stats";
         }
+
+        @include media("desktop-s"){
+            grid-template-areas: "hero content"
+                                "hero stats";
+        width: 90%;
+        margin: 0 auto;
         }
+    }
 
     &-hero{
         display: none;
         grid-area: hero;
         width: 100%;
         height: 100%;
-        display: none;
+
+        @include media("desktop-s"){
+            display: inline;
+        }
     }
 
     &-content{
         grid-area: content;
         width: 70%;
         margin: 0 auto;
+
+        @include media("desktop-s"){
+            margin: 30% 0 0 0;
+            width: 90%;
+        }
+
         &-subtitle{
             color: $color-primario;
             font-family: $Fuente1;
@@ -33,6 +49,10 @@
         &-title{
             font-family: $Fuente1;
             font-size: 2.2em;
+
+            @include media("desktop-s"){
+                font-size: 2.5em;
+            }
         }
 
         &-text{
@@ -44,8 +64,12 @@
 
     &-list{
         grid-area: stats;
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
+
+        @include media("desktop-s"){
+            margin: 0;
+        }
 
         &-item{
             font-family: $Fuente2;

@@ -37,6 +37,7 @@
             
             @include media("tablet"){
                 width: 90%;
+                margin: 0 auto;
             }
 
             &-image{

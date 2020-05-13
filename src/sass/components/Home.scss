@@ -12,6 +12,14 @@
             grid-template-areas: "banner hero"
                                 "banner hero"; 
         }
+
+        @include media("desktop-s"){
+            height: 100vh;
+            @include grid-template-columns(1fr grid-repeat(3));
+            @include grid-template-rows(1fr grid-repeat(3));
+            grid-template-areas: "banner banner hero hero"
+                                "banner banner hero hero";
+        }
     }
 
     &-navbar{
@@ -49,6 +57,11 @@
             width: 90%;
             margin: 0;
         }
+
+        @include media("desktop-s"){
+            width: 90%;
+            margin-top: 50%;
+        }
     }
 
     &-skew{
@@ -61,6 +74,10 @@
         transform: skew(20deg, 0deg);
         width: 200%;
         display: none;
+
+        @include media("desktop-s"){
+            display: inline;
+        }
     }
 
     &-banner{
@@ -70,6 +87,12 @@
         &-content{
             width: 60%;
             margin: 20% 0 0 0;
+
+            @include media("desktop-s"){
+                width: 70%;
+                margin-bottom: 10%;
+                margin-top: 0;
+            }
         }
 
         &-salute{
@@ -79,6 +102,10 @@
             animation: animationIn 1s;
             animation-timing-function: ease-out;
             margin: 0;
+
+            @include media ("desktop-s"){
+                font-size: 2em;
+            }
         }
 
         &-name{
@@ -87,6 +114,10 @@
             animation: animationIn 1s;
             animation-timing-function: ease-out;
             margin: 0;
+
+            @include media ("desktop-s"){
+                font-size: 4em;
+            }
         }
 
         &-title{
@@ -94,6 +125,11 @@
             animation: animationIn 1.5s;
             animation-timing-function: ease-out;
             margin: 0;
+
+            @include media("desktop-s"){
+                font-size: 1.2em;
+
+            }
         }
 
         &-text{
@@ -103,6 +139,10 @@
             animation: animationIn 1.3s;
             animation-timing-function: ease-out;
             font-size: .9em;
+
+            @include media("desktop-s"){
+                font-size: 1em;
+            }
         }
 
         @include media("tablet"){
@@ -111,11 +151,21 @@
             margin: 0;
         }
 
+        @include media("desktop-s"){
+            grid-row: 2 / 5;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
     }
 
     &-social{
         margin: 40% 12% 24% 10%;
         padding: 2%;
+
+        @include media("desktop-s"){
+            margin:0 12% 24% 0;
+        }
 
         ul{
             display: flex;
@@ -127,6 +177,10 @@
             margin: 0;
             li{
                 margin-bottom: 20%;
+
+                @include media("desktop-s"){
+                    margin-bottom: 200%;
+                }
                 a{
                     font-size: 1.3em;
                     color: gray;
