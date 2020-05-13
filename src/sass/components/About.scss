@@ -3,8 +3,8 @@
         @include display-grid;
         @include grid-template-columns(1fr grid-repeat(1));
         @include grid-template-rows(1fr grid-repeat(1));
-        grid-template-areas: "content content"
-                            "stats stats";
+            grid-template-areas: "content content"
+                                "stats stats";
 
         @include media("tablet"){
             grid-template-areas: "content stats"
@@ -14,8 +14,8 @@
         @include media("desktop-s"){
             grid-template-areas: "hero content"
                                 "hero stats";
-        width: 90%;
-        margin: 0 auto;
+            width: 90%;
+            margin: 0 auto;
         }
     }
 
