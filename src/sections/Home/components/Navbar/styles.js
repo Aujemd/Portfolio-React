@@ -84,7 +84,6 @@ export const NavUl = styled.ul`
 `
 
 export const NavLi = styled.li`
-    padding: 2%;
     @media only screen and (min-width: 992px){
         margin-right: 4%;
 
