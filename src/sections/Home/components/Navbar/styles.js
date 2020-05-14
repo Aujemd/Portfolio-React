@@ -84,6 +84,7 @@ export const NavUl = styled.ul`
 `
 
 export const NavLi = styled.li`
+    padding: 2%;
     @media only screen and (min-width: 992px){
         margin-right: 4%;
 
@@ -99,6 +100,7 @@ export const NavLi = styled.li`
 export const NavA = styled.a`
 
         color: black;
+        padding: 5%;
 
         &:hover{
             text-decoration: none;
